@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sauna Bewerbung Beispiel</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+<body class="container">
+	<h1>Sauna</h1>
+	<ul class="nav nav-pills">
+		<li><a href="javascript:void(0)"><span class="nav-open-btn" id="nav-open-btn">&#9776; Menu</span></a></li>
+		<li class="hidden-xs" role="presentation"><a href="index.html">Home</a></li>
+		<li class="hidden-xs" role="presentation"><a href="impressum.html">Impressum</a></li>
+		<li class="hidden-xs" role="presentation"><a href="preisliste.html">Preisliste</a></li>
+		<li class="hidden-xs" role="presentation"><a href="offnungszeiten.html">Öffnungszeiten</a></li>
+		<li class="hidden-xs" role="presentation"><a href="kontakte.html">Kontakte</a></li>
+	</ul>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<a href="index.html">Home</a>		
+		<a href="impressum.html">Impressum</a>		
+		<a href="preisliste.html">Preisliste</a>		
+		<a href="offnungszeiten.html">Öffnungszeiten</a>		
+		<a href="kontakte.html">Kontakte</a>		
+	</div>
+	<!-- test css flip 3D Animation -->
+	<div class="container hidden-xs">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-3">
+				<div class="flip3D">
+					<div class="back">Box menu test 1  - Back</div>
+					<div class="front">Box menu test 1  - Front</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="flip3D hidden-xs col-sm-6">
+					<div class="back">Box menu test 2  - Back</div>
+					<div class="front">Box menu test 2  - Front</div>
+				</div>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+	</div>
+	<!--  bubble select test -->
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 hidden-xs"></div>
+			<div class="col-sm-6 col-xs-12">
+				<div id="bubblebox">
+					<div id="bubbles">
+						<div onclick="bubbles(0); clearInterval(intrvl);" style="background:#999;"></div>
+						<div onclick="bubbles(1); clearInterval(intrvl);"></div>
+						<div onclick="bubbles(2); clearInterval(intrvl);"></div>
+						<div onclick="bubbles(3); clearInterval(intrvl);"></div>
+					</div>
+					<div id="bubblecontent">
+						<h2>Heading Number 1</h2>
+						<p>Content for section 1</p>
+					</div>
+				</div>
+				<div class="col-sm-3 hidden-xs"></div>
+			</div>
+		</div>
+	</div>
+	<script src=../javascript/script.js></script>
+</body>
+</html>
