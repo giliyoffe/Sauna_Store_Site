@@ -10,7 +10,7 @@
 <body class="container">
 	<h1>Sauna</h1>
 	<ul class="nav nav-pills">
-		<li><a href="javascript:void(0)"><span class="nav-open-btn" id="nav-open-btn">&#9776; Menu</span></a></li>
+		<li><a href="javascript:void(0)" class="nav-open-btn" id="nav-open-btn">&#9776; Menu</a></li>
 		<li class="hidden-xs" role="presentation"><a href="index.html">Home</a></li>
 		<li class="hidden-xs" role="presentation"><a href="impressum.html">Impressum</a></li>
 		<li class="hidden-xs" role="presentation"><a href="preisliste.html">Preisliste</a></li>
@@ -18,7 +18,7 @@
 		<li class="hidden-xs" role="presentation"><a href="kontakte.html">Kontakte</a></li>
 	</ul>
 	<div id="mySidenav" class="sidenav">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+		<a class="closebtn" href="javascript:void(0)">×</a>
 		<a href="index.html">Home</a>		
 		<a href="impressum.html">Impressum</a>		
 		<a href="preisliste.html">Preisliste</a>		
@@ -51,10 +51,10 @@
 			<div class="col-sm-6 col-xs-12">
 				<div id="bubblebox">
 					<div id="bubbles">
-						<div onclick="bubbles(0); clearInterval(intrvl);" style="background:#999;"></div>
-						<div onclick="bubbles(1); clearInterval(intrvl);"></div>
-						<div onclick="bubbles(2); clearInterval(intrvl);"></div>
-						<div onclick="bubbles(3); clearInterval(intrvl);"></div>
+						<div class="first-css-state"></div>
+						<div></div>
+						<div></div>
+						<div></div>
 					</div>
 					<div id="bubblecontent">
 						<h2>Heading Number 1</h2>
