@@ -1,3 +1,7 @@
+function _(id){
+	return document.getElementById(id);
+}
+
 function openNav() {
 	document.getElementById("mySidenav").style.width = "100%";
 }
@@ -6,21 +10,20 @@ function closeNav() {
 	document.getElementById("mySidenav").style.width = "0";
 }
 
+document.getElementsByClassName("closebtn")[0].addEventListener("click", closeNav);
+
 // ---------- Bubble select headlines test  -------------
 
-// Simple function returns object reference for elements by ID
-function _(id){return document.getElementById(id);}
-
 var bubbleArray, bubbleIndex=0, intrvl;
-// bca - Bubble Content Array. 
-var bca = [
+
+var contentsSlider = [
 	'<h2>Heading Number 1</h2><p>Content for section 1</p>',
 	'<h2>Heading Number 2</h2><p>Content for section 2</p>',
 	'<h2>Heading Number 3</h2><p>Content for section 3</p>',
 	'<h2>Heading Number 4</h2><p>Content for section 4</p>'
 ];
 
-function bubbles(bubbleIndex){
+function changeSlide(bubbleIndex){
 	// Fade-out the content
 	_("bubblecontent").style.opacity = 0;
 	for(var i=0; i < bubbleArray.length; i++){
@@ -28,13 +31,13 @@ function bubbles(bubbleIndex){
 	}
 	// Change the target bubble background to be darker than the rest
 	bubbleArray[bubbleIndex].style.background = "#999";
-	// Stall the bubble and content changing for just 300ms
+	// Stall the bubble and content changing for 200ms
 	setTimeout(function(){
 		// Change the content
-		_("bubblecontent").innerHTML = bca[bubbleIndex];
+		_("bubblecontent").innerHTML = contentsSlider[bubbleIndex];
 		// Fade-in the content
 		_("bubblecontent").style.opacity = 1;
-	}, 300);
+	}, 200);
 }
 
 function bubbleSlide(){
@@ -42,12 +45,23 @@ function bubbleSlide(){
 	if(bubbleIndex == bubbleArray.length){
 		bubbleIndex = 0;
 	}
-	bubbles(bubbleIndex);
+	changeSlide(bubbleIndex);
 }
+
+function bubbleClickHandler(index) {
+	clearInterval(intrvl);
+	changeSlide(index);
+}
+
 // Start the application up when document is ready
 window.addEventListener("load", function(){
-	var bbls = _("bubbles")
+	var bbls = _("bubbles");
 	bubbleArray = (bbls && bbls.children) || [];
 	intrvl = setInterval(bubbleSlide, 3500);
 	_('nav-open-btn').addEventListener('click', openNav);
+
+	for (var i = 0; i < bubbleArray.length; i++) {
+		bubbleArray[i].addEventListener('click', bubbleClickHandler.bind(null, i));
+	}
 });
+
