@@ -1,208 +1,220 @@
-
-body{
-	text-align: center;
-	background: url(../img/sauna_big.jpg)no-repeat top center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+body {
+    text-align: center;
+    background: url(../img/sauna_big.jpg)no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
-	text-decoration: none;
-	background: rgba(255,255,255,.3);
+.nav>li>a:focus,
+.nav>li>a:hover {
+    text-decoration: none;
+    background: rgba(255, 255, 255, .3);
 }
 
 .nav {
-	display: inline-block;
-	position: relative;
-	padding: 0;
-	margin: 40 auto;
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin: 40 auto;
 }
 
 .nav>li {
-	height: 42px;
+    height: 42px;
 }
+
 
 /* Box 3d flip test  */
-.flip3D{
-	width: 130px;
-	height: 120px;
-	margin: 0 auto;
-	padding-top: 20px;
+
+.flip3D {
+    width: 130px;
+    height: 120px;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
-.flip3D > .front{
-	color: #ccc;
-	position:absolute;
-	-webkit-transform: perspective( 600px ) rotateY( 0deg );
-	transform: perspective( 600px ) rotateY( 0deg );
-	background:#333; 
-	width: 130px;
-	height: 120px;
-	padding: 20px 18px; border-radius: 7px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	transition: -webkit-transform .5s linear 0s;
-	transition: transform .5s linear 0s;
+.flip3D>.front {
+    color: #ccc;
+    position: absolute;
+    -webkit-transform: perspective( 600px) rotateY( 0deg);
+    transform: perspective( 600px) rotateY( 0deg);
+    background: #333;
+    width: 130px;
+    height: 120px;
+    padding: 20px 18px;
+    border-radius: 7px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
 }
 
-.flip3D > .back{
-	position:absolute;
-	-webkit-transform: perspective( 600px ) rotateY( 180deg );
-	transform: perspective( 600px ) rotateY( 180deg );
-	background: #80BFFF; width: 130px;
-	height: 120px;
-	padding: 20px 18px; border-radius: 7px;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	transition: -webkit-transform .5s linear 0s;
-	transition: transform .5s linear 0s;
+.flip3D>.back {
+    position: absolute;
+    -webkit-transform: perspective( 600px) rotateY( 180deg);
+    transform: perspective( 600px) rotateY( 180deg);
+    background: #80BFFF;
+    width: 130px;
+    height: 120px;
+    padding: 20px 18px;
+    border-radius: 7px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .5s linear 0s;
+    transition: transform .5s linear 0s;
 }
 
-.flip3D:hover > .front{
-	-webkit-transform: perspective( 600px ) rotateY( -180deg );
-	transform: perspective( 600px ) rotateY( -180deg );
+.flip3D:hover>.front {
+    -webkit-transform: perspective( 600px) rotateY( -180deg);
+    transform: perspective( 600px) rotateY( -180deg);
 }
 
-.flip3D:hover > .back{
-	-webkit-transform: perspective( 600px ) rotateY( 0deg );
-	transform: perspective( 600px ) rotateY( 0deg );
+.flip3D:hover>.back {
+    -webkit-transform: perspective( 600px) rotateY( 0deg);
+    transform: perspective( 600px) rotateY( 0deg);
 }
+
 
 /* End of Box 3d flip test  */
 
+
 /*  bubble select test */
 
-#bubblebox{
-	background: rgba(0,0,0,.4); 
-	height:250px; 
-	margin:50px auto; 
-	border-radius: 5px; 
+#bubblebox {
+    background: rgba(0, 0, 0, .4);
+    height: 250px;
+    margin: 50px auto;
+    border-radius: 5px;
 }
 
-#bubbles{
-	width:auto; 
-	margin:0px auto; 
-	text-align:center;
+#bubbles {
+    width: auto;
+    margin: 0px auto;
+    text-align: center;
 }
 
-#bubbles > div{
-	display:inline-block; 
-	width:10px; 
-	height:10px; 
-	margin:24px 10px 0px 10px; 
-	background:rgba(0,0,0,.1); 
-	text-align:center;
-	border:2px solid #999; 
-	border-radius:100%; 
-	font-size:17px; 
-	text-decoration:none; 
-	transition: background 0.3s linear 0s; 
-	cursor:pointer; 
+#bubbles>div {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 24px 10px 0px 10px;
+    background: rgba(0, 0, 0, .1);
+    text-align: center;
+    border: 2px solid #999;
+    border-radius: 100%;
+    font-size: 17px;
+    text-decoration: none;
+    transition: background 0.3s linear 0s;
+    cursor: pointer;
 }
 
-#bubblecontent{ 
-	margin:0px auto;
-	transition:opacity 0.3s linear 0s;
-	font-family: Arial;
+#bubblecontent {
+    margin: 0px auto;
+    transition: opacity 0.3s linear 0s;
+    font-family: Arial;
 }
 
-#bubblecontent > h2{ 
-	text-align:center; 
-	color:#7EA800;
+#bubblecontent>h2 {
+    text-align: center;
+    color: #7EA800;
 }
 
-#bubblecontent > p{
-	font-size:17px;
-	line-height:1.5em;
-	padding:20px 50px;
-	color:#777;
+#bubblecontent>p {
+    font-size: 17px;
+    line-height: 1.5em;
+    padding: 20px 50px;
+    color: #777;
 }
+
+
 /*  End of bubble select test */
 
-.clearfix:after { 
-	content: "";
-	visibility: hidden;
-	display: block;
-	height: 0;
-	clear: both;
+.clearfix:after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
 
-li.activ{
-	font-weight: bold;
+li.activ {
+    font-weight: bold;
 }
 
 a:visited {
-	color: black;
+    color: black;
 }
 
 a:link {
-	color: black;
+    color: black;
 }
 
 .textsquare {
-	padding: 0 25% 25% 0;
+    padding: 0 25% 25% 0;
 }
 
 .sidenav {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	left: 0;
-	background-color: #111;
-	overflow-x: hidden;
-	transition: 0.5s;
-	padding-top: 60px;
-	text-align:center;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
 }
 
 .sidenav a {
-	padding: 8px 0;
-	text-decoration: none;
-	font-size: 25px;
-	color: #818181;
-	display: block;
-	transition: 0.3s
-
+    padding: 8px 0;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
 }
 
-.sidenav a:hover{
-	color: #f1f1f1;
+.sidenav a:hover {
+    color: #f1f1f1;
 }
 
 .closebtn {
-	position: absolute;
-	top: 0;
-	right: 25px;
-	font-size: 36px !important;
-	margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
 }
 
 .centertime table,
 .centertime {
-	margin: 20px auto;
+    margin: 20px auto;
 }
 
 .extra-margin {
-	margin: 90px auto;
+    margin: 90px auto;
 }
 
 ul {
-	list-style: none;
-	padding: 0;	
+    list-style: none;
+    padding: 0;
 }
 
-@media (max-width: 767px){
-	.extra-margin {
-		margin: 10px auto;
-	}
-	.sidenav {
-		padding-top: 15px;
-	}
-	.sidenav a {
-		font-size: 18px;
-	}
+@media (max-width: 767px) {
+    .extra-margin {
+        margin: 10px auto;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#bubbles>div.first-css-stat { 
+    background: #999;
 }
