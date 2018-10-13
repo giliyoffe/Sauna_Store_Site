@@ -218,3 +218,7 @@ ul {
 #bubbles>div.first-css-state { 
     background: #999;
 }
+
+.second-td{
+    padding-left: 20px;
+}
