@@ -17,7 +17,7 @@ document.getElementsByClassName("closebtn")[0].addEventListener("click", closeNa
 var bubbleArray, bubbleIndex=0, intrvl;
 
 var contentsSlider = [
-	'<h2>Heading Number 1</h2><p>Content for section 1</p>',
+	'<h2>Set an appointment TODAY!</h2><p>+49 030 033 027</p>',
 	'<h2>Heading Number 2</h2><p>Content for section 2</p>',
 	'<h2>Heading Number 3</h2><p>Content for section 3</p>',
 	'<h2>Heading Number 4</h2><p>Content for section 4</p>'
