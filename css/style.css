@@ -75,9 +75,7 @@ body {
     transform: perspective( 600px) rotateY( 0deg);
 }
 
-
 /* End of Box 3d flip test  */
-
 
 /*  bubble select test */
 
@@ -126,7 +124,6 @@ body {
     padding: 20px 50px;
     color: #777;
 }
-
 
 /*  End of bubble select test */
 
@@ -185,7 +182,7 @@ a:link {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px !important;
+    font-size: 36px !important; /*TODO: delete important*/
     margin-left: 50px;
 }
 
